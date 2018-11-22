@@ -14,6 +14,11 @@ class ReportController extends RestfulController {
         super(Report)
     }
 
+    def getJohnSmithReport() {
+        // respond Report.findAll()
+        respond User.findAllByName('john smith')
+    }
+
     //TODO: find all users by city.
     def findByCity(){
     }

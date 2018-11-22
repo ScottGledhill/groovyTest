@@ -4,6 +4,7 @@ class UrlMappings {
 
     static mappings = {
 
+        "/getJohnSmithReport"(controller: "report", action: "getJohnSmithReport")
         "/test"(controller: "report", action: "test")
         "/sales"(controller: "report", action: "getAllSales")
         "/findByCity"(controller: "report", action: "findByCity")
