@@ -24,12 +24,13 @@ class ReportController extends RestfulController {
     }
 
     def getAllSales(){
-//        respond Sales.findAll()
-
-        reportService.buildQuery(1)
-        respond [:]
+        def sales = Sales.findAll()
+        if(params){
+            respond reportService.buildQuery(report.getMetrics().iterator().next(), params.dateTo, params.dateFrom)
+        } else {
+            respond (sales)
+        }
     }
-
 
     def getReport(int id){
 

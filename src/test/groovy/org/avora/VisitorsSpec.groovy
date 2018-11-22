@@ -1,18 +1,18 @@
-package org.avora
+// package org.avora
 
-import grails.testing.gorm.DomainUnitTest
-import spock.lang.Specification
+// import grails.testing.gorm.DomainUnitTest
+// import spock.lang.Specification
 
-class VisitorsSpec extends Specification implements DomainUnitTest<Visitors> {
+// class VisitorsSpec extends Specification implements DomainUnitTest<Visitors> {
 
-    def setup() {
-    }
+//     def setup() {
+//     }
 
-    def cleanup() {
-    }
+//     def cleanup() {
+//     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
-}
+//     void "test something"() {
+//         expect:"fix me"
+//             true == false
+//     }
+// }
