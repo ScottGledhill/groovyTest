@@ -5,14 +5,11 @@ import spock.lang.Specification
 
 class ReportSpec extends Specification implements DomainUnitTest<Report> {
 
-    def setup() {
-    }
+    void "Test can take in date ranges"() {
+        when:"The message action is invoked"
+        ReportController.getAllSales()
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-        expect:"fix me"
-            true == false
+        then:"report with sales data is returned"
+        response.text == 'Hello'
     }
 }
